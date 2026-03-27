@@ -13,7 +13,6 @@
 * {
     box-sizing: border-box;
     text-rendering: geometricPrecision;
-    /* border: .5px solid red; */
 }
 
 html,
@@ -52,7 +51,11 @@ p {
 .container {
     max-width: var(--container-w);
     margin: 0 auto;
-    padding: 2rem 1rem 1rem;
+    padding: 0 0.5rem;
+}
+
+.container:nth-child(1) {
+    padding: 1.5rem 0.75rem;
 }
 
 .split-layout {
@@ -89,8 +92,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem 2rem; */
-    /* Override container padding for header */
 }
 
 .logo {
@@ -165,13 +166,11 @@ main {
 .service-block {
     border: var(--border);
     margin-bottom: 2rem;
-    /* Spacing between service types */
     padding: 2rem;
 }
 
 .category-tag {
     font-size: 3rem;
-    /* Scaled down from 4rem for better balance */
     font-weight: 900;
     border: var(--border);
     padding: 0.2rem 0.8rem;
@@ -195,7 +194,6 @@ main {
     padding-left: 1.5rem;
 }
 
-/* Custom bullet logic */
 .detail-list li::before {
     content: "—";
     position: absolute;
@@ -209,7 +207,6 @@ main {
     border: var(--border);
     padding: 2rem;
     background-color: #fff;
-    /* Slight contrast if bg is fdfdfd */
 }
 
 .info-group {
@@ -267,7 +264,6 @@ main {
     border: none;
     cursor: pointer;
     align-self: flex-start;
-    /* Keeps button from stretching full width on desktop */
 }
 
 /* projects */
@@ -300,7 +296,7 @@ main {
     transform: scale(1.05);
 }
 
-/* Modal Styling */
+/* modal */
 .modal {
     display: none;
     position: fixed;
@@ -363,7 +359,6 @@ main {
 
     .contact-form .cta-button {
         align-self: stretch;
-        /* Button goes full width on mobile */
     }
 
     .gallery-grid {
