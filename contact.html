@@ -1,48 +1,52 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>N.B.R. Paint</title>
-        <link rel="stylesheet" href="/assets/css/styles.css" />
-    </head>
 
-    <body>
-        <header>
-            <div class="main-header">
-                <a href="/" class="logo">N.B.R. Paint</a>
-                <nav class="main-nav">
-                    <a href="/about.html">About</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/projects.html">Projects</a>
-                    <a href="/contact.html" class="nav-cta">Contact</a>
-                </nav>
-            </div>
-        </header>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | NBR Paint Co</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
 
-        <main>
-            <section class="contact-header container">
-                <h1>Get a Free Estimate</h1>
-                <p>
-                    Ready to start your next project? Reach out to us directly
-                    or fill out the form, and we'll get back to you within 48
-                    hours.
-                </p>
-            </section>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <a href="/" class="logo">NBR Paint Co</a>
+            <nav class="main-nav">
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/contact.html" class="nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-            <section class="contact-grid container">
+    <main>
+        <section class="container">
+            <h1>Get a Free Estimate</h1>
+            <p>
+                Ready to start your next project? Reach out to us directly
+                or fill out the form, and we'll get back to you within 48
+                hours.
+            </p>
+        </section>
+
+        <section class="container">
+            <div class=" split-layout service-block">
+
                 <div class="contact-info">
-                    <div class="info-block">
+                    <div class="info-group">
                         <h3>Call / Text (Spanish)</h3>
-                        <p><a href="tel:817-681-4909">(817) 681-4909</a></p>
+                        <p>Nicholas Romero: <a href="tel:817-681-4909" class="phone-link">(817) 681-4909</a></p>
                     </div>
 
-                    <div class="info-block">
+                    <div class="info-group">
                         <h3>Call / Text (English)</h3>
-                        <p><a href="tel:682-785-5854">(682) 785-5854</a></p>
+                        <p>Brayan Romero: <a href="tel:682-785-5854" class="phone-link">(682) 785-5854</a></p>
+                        <p>Dilan Romero: <a href="tel:682-457-5800" class="phone-link">(682) 457-5800</a></p>
                     </div>
 
-                    <div class="info-block">
+                    <div class="info-group">
                         <h3>Service Area</h3>
                         <p>
                             Dallas, Fort Worth, and surrounding DFW Metroplex.
@@ -50,64 +54,38 @@
                     </div>
                 </div>
 
-                <div class="contact-form-container">
-                    <form
-                        class="contact-form"
-                        action="https://formspree.io/f/xjgeqydj"
-                        method="POST"
-                    >
-                        <input
-                            type="hidden"
-                            name="_subject"
-                            value="New Submission from NBR Paint Co"
-                        />
+                <div class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/xjgeqydj" method="POST">
+                        <input type="hidden" name="_subject" value="New Submission from NBR Paint Co" />
 
                         <div class="form-group">
                             <label>Name</label>
-                            <input
-                                type="text"
-                                name="name"
-                                required
-                                placeholder="Your name"
-                            />
+                            <input type="text" name="name" required placeholder="Your name" />
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
-                                placeholder="email@address.com"
-                            />
+                            <input type="email" id="email" name="email" required placeholder="email@address.com" />
                         </div>
 
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="3"
-                                required
-                                placeholder="Tell us about your project..."
-                            ></textarea>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Tell us about your project..."></textarea>
                         </div>
 
-                        <input
-                            type="text"
-                            name="_gotcha"
-                            style="display: none"
-                        />
+                        <input type="text" name="_gotcha" style="display: none" />
 
                         <button type="submit" class="cta-button">Send</button>
                     </form>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <footer class="main-footer">
-            <p>&copy; 2026 N.B.R. Paint LLC.</p>
-        </footer>
-    </body>
+    <footer class="main-footer">
+        <p>&copy;2026 NBR Paint Co LLC.</p>
+    </footer>
+</body>
+
 </html>

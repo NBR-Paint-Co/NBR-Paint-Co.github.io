@@ -1,67 +1,69 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>N.B.R. Paint</title>
-        <link rel="stylesheet" href="/assets/css/styles.css" />
-    </head>
 
-    <body>
-        <header>
-            <div class="main-header">
-                <a href="/" class="logo">N.B.R. Paint</a>
-                <nav class="main-nav">
-                    <a href="/about.html">About</a>
-                    <a href="/services.html">Services</a>
-                    <a href="/projects.html">Projects</a>
-                    <a href="/contact.html" class="nav-cta">Contact</a>
-                </nav>
-            </div>
-        </header>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | NBR Paint Co</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
 
-        <main>
-            <section class="projects-header container">
-                <h1>Previous Work and Projects</h1>
-                <p>
-                    A visual record of our residential, commercial, and
-                    specialty finishing projects across DFW.
-                </p>
-            </section>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <a href="/" class="logo">NBR Paint Co</a>
+            <nav class="main-nav">
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/contact.html" class="nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-            <div class="gallery-grid container">
+    <main>
+        <section class="container">
+            <h1>Previous Work and Projects</h1>
+            <p>
+                A visual record of our residential, commercial, and
+                specialty finishing projects across DFW.
+            </p>
+        </section>
+
+        <section class="container">
+            <div id="gallery" class="gallery-grid">
                 <p>Loading projects...</p>
             </div>
+        </section>
 
-            <section id="contact-cta" class="cta-bg">
-                <div class="cta-box container">
-                    <div class="cta-text">
-                        <h2>Ready to start your next project?</h2>
-                        <p>
-                            Direct communication. Owner-operated accountability.
-                            Free estimates for the DFW Metroplex.
-                        </p>
-                    </div>
-
-                    <div class="cta-action">
-                        <a href="/contact.html" class="cta-button big"
-                            >Request an Estimate</a
-                        >
-                    </div>
+        <section id="contact-cta" class="dark-section">
+            <div class="container split-layout align-center">
+                <div class="cta-text">
+                    <h2>Ready to start your next project?</h2>
+                    <p>
+                        Direct communication. Owner-operated accountability.
+                        Free estimates for the DFW Metroplex.
+                    </p>
                 </div>
-            </section>
-        </main>
 
-        <footer class="main-footer">
-            <p>&copy; 2026 N.B.R. Paint LLC.</p>
-        </footer>
+                <div class="cta-action">
+                    <a href="/contact.html" class="cta-button secondary-btn">Request an Estimate</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <div id="image-modal" class="modal">
-            <span class="close-modal">&times;</span>
-            <img class="modal-content" id="img-slot" />
-            <div id="modal-caption"></div>
-        </div>
-    </body>
+    <footer class="main-footer">
+        <p>&copy;2026 NBR Paint Co LLC.</p>
+    </footer>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img-slot" alt="Enlarged project view" />
+        <div id="modal-caption"></div>
+    </div>
 
     <script src="/assets/js/projects.js"></script>
+</body>
+
 </html>
